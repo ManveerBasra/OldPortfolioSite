@@ -292,13 +292,13 @@ body {
 
 /* Small Screens (Phones) */
 @media (max-width: 767px) {
-  .header-container,
   .about-container,
   .projects-content {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .header-container {
+    padding: 0 20px;
     margin-top: 15vh;
     margin-bottom: 30px;
   }
