@@ -7,23 +7,23 @@ a {
 }
 
 body {
-  background-color: #f5f9ff;
+  background-color: #f5fbfe;
 }
 
 /* --- HEADER --- */
 .header-container {
-  width: 80%;
   max-width: 1000px;
-  margin-top: 250px;
+  margin-top: 30vh;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;
 }
 
 .header-title {
   font-weight: 400;
   font-size: 70px;
-  color: #006eff;
+  color: #2979ff;
   margin: 0 0;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .header-intro a {
-  color: #006eff;
+  color: #2979ff;
   text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .icon:hover {
-  color: #006eff;
+  color: #2979ff;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.2);
 }
@@ -72,11 +72,9 @@ body {
 /* --- ABOUT TERMINAL --- */
 
 .about-container {
-  width: 80%;
   max-width: 1000px;
-  min-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .about-terminal {
@@ -157,7 +155,7 @@ body {
 
 .project-title-container h1:after {
   content: " ";
-  border: 2px solid #80b7ff;
+  border: 2px solid #2979ff;
   display: block;
   margin: 0 auto;
   margin-top: 5px;
@@ -172,10 +170,10 @@ body {
 }
 
 .projects-content {
-  width: 80%;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;
 }
 
 .project-card {
@@ -217,7 +215,7 @@ body {
 }
 
 .project-link-container.demo {
-  background-color: #80b7ff;
+  background-color: #2979ff;
   color: #fff;
 }
 
@@ -236,11 +234,11 @@ body {
 }
 
 .project-link-container.demo:hover {
-  background-color: #006eff;
+  background-color: #669eff;
 }
 
 .project-link-container.source:hover {
-  color: #006eff;
+  color: #2979ff;
 }
 
 .project-link-container a, i, p {
@@ -261,13 +259,13 @@ body {
 }
 
 .card-about a {
-  color: #006eff;
+  color: #2979ff;
   text-decoration: none;
 }
 
 .card-tags span {
   color: #444;
-  border: 1px solid #006eff;
+  border: 1px solid #2979ff;
   border-radius: 8px;
   text-transform: uppercase;
   display: inline-block;
@@ -290,4 +288,39 @@ body {
   font-size: 12px;
   font-weight: 300;
   color: #444;
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 767px) {
+  .header-container,
+  .about-container,
+  .projects-content {
+    padding: 0 20px;
+  }
+
+  .header-container {
+    margin-top: 15vh;
+    margin-bottom: 30px;
+  }
+
+  .header-title {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  .header-intro {
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .social-media-icons {
+    justify-content: center;
+  }
+
+  .project-title-container {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
 }
