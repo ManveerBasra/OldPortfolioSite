@@ -109,34 +109,33 @@ body {
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
 }
 
-.terminal-window .statement-group:first-child {
+.terminal-window .statement:first-child {
   padding-top: 30px;
 }
 
-.statement-group {
+.statement {
   margin-bottom: 35px;
   margin-left: 35px;
   margin-right: 35px;
 }
-
-.statement {
+ .input-statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
   font-size: 18px;
+  color: #f7f7f7;
   margin: 5px 0;
 }
-
-.statement.input {
-  color: #f7f7f7;
-}
-
-.statement.input:before {
+ .input-statement:before {
   content: ">\A0";
 }
-
-.statement.output {
+ .output-statement {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  font-size: 18px;
   color: #e7d184;
+  margin: 5px 0;
 }
 
 
