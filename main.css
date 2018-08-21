@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   font-size: 70px;
   color: #006eff;
-  margin-bottom: 0px;
+  margin: 0 0;
 }
 
 .header-intro {
@@ -74,6 +74,7 @@ body {
 .about-container {
   width: 80%;
   max-width: 1000px;
+  min-width: 375px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -108,36 +109,34 @@ body {
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
 }
 
-.terminal-window .statement:first-child {
+.terminal-window .statement-group:first-child {
   padding-top: 30px;
 }
 
-.statement {
+.statement-group {
   margin-bottom: 35px;
   margin-left: 35px;
   margin-right: 35px;
 }
 
-.input-statement {
+.statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
   font-size: 18px;
-  color: #f7f7f7;
   margin: 5px 0;
 }
 
-.input-statement:before {
+.statement.input {
+  color: #f7f7f7;
+}
+
+.statement.input:before {
   content: ">\A0";
 }
 
-.output-statement {
-  display: block;
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 300;
-  font-size: 18px;
+.statement.output {
   color: #e7d184;
-  margin: 5px 0;
 }
 
 
@@ -191,11 +190,10 @@ body {
 
 .card-text {
   display: block;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .card-header {
@@ -208,8 +206,6 @@ body {
 .project-link-container {
   display: inline-block;
   white-space: nowrap;
-  background-color: #fff;
-  color: #444;
   box-shadow: 0 3px 6px rgba(50,50,93,.1), 0 1px 4px rgba(0,0,0,.2);
   border-radius: 4px;
   line-height: 20px;
@@ -217,8 +213,18 @@ body {
   font-weight: 600;
   padding: 0 14px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: all .3s ease;
+}
+
+.project-link-container.demo {
+  background-color: #80b7ff;
+  color: #fff;
+}
+
+.project-link-container.source {
+  background-color: #fff;
+  color: #444;
 }
 
 .project-link-container i {
@@ -226,9 +232,16 @@ body {
 }
 
 .project-link-container:hover {
-  color: #006eff;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.2);
+}
+
+.project-link-container.demo:hover {
+  background-color: #006eff;
+}
+
+.project-link-container.source:hover {
+  color: #006eff;
 }
 
 .project-link-container a, i, p {
@@ -277,4 +290,5 @@ body {
 .footer p {
   font-size: 12px;
   font-weight: 300;
+  color: #444;
 }

@@ -45,27 +45,33 @@
         <div class="terminal-header-button" style="background-color: #33c948;"></div>
       </div>
       <div class="terminal-window">
-        <div class="statement">
-          <p class="input-statement">Manveer.current_location</p>
-          <p class="output-statement">
+        <div class="statement-group">
+          <p class="input statement">Manveer.age</p>
+          <p class="output statement">
+            19
+          </p>
+        </div>
+        <div class="statement-group">
+          <p class="input statement">Manveer.current_location</p>
+          <p class="output statement">
             "Vancouver, BC"
           </p>
         </div>
-        <div class="statement">
-          <p class="input-statement">Manveer.interests</p>
-          <p class="output-statement">
+        <div class="statement-group">
+          <p class="input statement">Manveer.interests</p>
+          <p class="output statement">
             ["music", "photography", "working out", "graphic design"]
           </p>
         </div>
-        <div class="statement">
-          <p class="input-statement">Manveer.education</p>
-          <p class="output-statement">
+        <div class="statement-group">
+          <p class="input statement">Manveer.education</p>
+          <p class="output statement">
             "1 Year - Computer Science - University of Toronto"
           </p>
         </div>
-        <div class="statement">
-          <p class="input-statement">Manveer.skills</p>
-          <p class="output-statement">
+        <div class="statement-group">
+          <p class="input statement">Manveer.skills</p>
+          <p class="output statement">
             ["Python", "html", "css", "git", "Adobe Illustrator/Photoshop"]
           </p>
         </div>
@@ -80,13 +86,36 @@
   <div class="projects-container">
     <div class="projects-content">
 
+      <!-- Website Design Card -->
+      <div class="project-card">
+        <div class="card-text">
+          <div class="card-header">
+            <h1>Website Portfolio</h1>
+          </div>
+          <div class="card-about">
+            <p>This project is actually this website, and it was my first
+              experience working with html and css. I programmed it completely
+              from scratch, and I ended up learning a lot about layout and site
+              structure.
+            </p>
+          </div>
+          <div class="card-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive Design</span>
+          </div>
+
+          <a href="https://github.com/ManveerBasra/ManveerBasra.github.io" target="_blank">
+            <div class="project-link-container source">
+              <i class="fa fa-github"></i>
+              <p>View Source</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <!-- Instagram Analytics Card -->
       <div class="project-card">
-        <!--
-        <div class="card-img">
-          <img src="./img/project_covers/ig_analytics_cover.png" width="100%">
-        </div>
-        -->
         <div class="card-text">
           <div class="card-header">
             <h1>Instagram Analytics</h1>
@@ -94,6 +123,11 @@
           <div class="card-about">
             <p>This project was based on a curiosity to use and play around with
               <a href="https://www.seleniumhq.org/" target="_blank">Selenium</a>.
+              I applied techniques learned from working on
+              <a href="https://github.com/ManveerBasra/ActivityExtractor" target="_blank">
+              ActivityExtractor</a> during
+              <a href="https://codein.withgoogle.com/archive/2016/" target="_blank">
+              Google Code-In 2016</a>.
               The main purpose of it is to login into a user's Instagram account,
               gather data about posts and followers and output to a .json file.
             </p>
@@ -105,16 +139,16 @@
             <span>HTML</span>
           </div>
 
-          <a href="https://github.com/ManveerBasra/InstagramAnalytics" target="_blank">
-            <div class="project-link-container">
-              <i class="fa fa-github"></i>
-              <p>View Source</p>
-            </div>
-          </a>
           <a href="https://www.youtube.com/watch?v=5UtocjpbL2Y" target="_blank">
-            <div class="project-link-container">
+            <div class="project-link-container demo">
               <i class="fa fa-external-link"></i>
               <p>Demo Video</p>
+            </div>
+          </a>
+          <a href="https://github.com/ManveerBasra/InstagramAnalytics" target="_blank">
+            <div class="project-link-container source">
+              <i class="fa fa-github"></i>
+              <p>View Source</p>
             </div>
           </a>
         </div>
@@ -122,11 +156,6 @@
 
       <!-- Minimax Games Card -->
       <div class="project-card">
-        <!--
-        <div class="card-img">
-          <img src="./img/project_covers/minimax_cover.png" width="100%">
-        </div>
-        -->
         <div class="card-text">
           <div class="card-header">
             <h1>Minimax Games</h1>
@@ -137,22 +166,25 @@
               and design recursive and iterative minimax functions. As these two
               functions are generally inefficient in regards to time and space,
               I added 2 more optimized minimax strategies (Memoization and Myopia).
+              While working on this project, I learned a lot about designing algorithms,
+              specifically how to make them more compact and efficient.
             </p>
           </div>
           <div class="card-tags">
             <span>Python</span>
+            <span>Algorithm Design</span>
           </div>
 
-          <a href="https://github.com/ManveerBasra/MinimaxTextGames" target="_blank">
-            <div class="project-link-container">
-              <i class="fa fa-github"></i>
-              <p>&nbspView Source</p>
-            </div>
-          </a>
           <a href="https://www.youtube.com/watch?v=1yMB0LOnr6s" target="_blank">
-            <div class="project-link-container">
+            <div class="project-link-container demo">
               <i class="fa fa-external-link"></i>
               <p>&nbspDemo Video</p>
+            </div>
+          </a>
+          <a href="https://github.com/ManveerBasra/MinimaxTextGames" target="_blank">
+            <div class="project-link-container source">
+              <i class="fa fa-github"></i>
+              <p>&nbspView Source</p>
             </div>
           </a>
         </div>
