@@ -190,7 +190,7 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .card-header {
@@ -322,5 +322,13 @@ body {
   .project-title-container {
     margin-top: 100px;
     margin-bottom: 40px;
+  }
+
+  .card-text {
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 40px;
   }
 }
