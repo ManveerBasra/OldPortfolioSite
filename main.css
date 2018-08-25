@@ -63,11 +63,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.icon:hover {
+.icon:hover, .resume-icon:hover {
   color: #2979ff;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.2);
 }
+
 
 /* --- ABOUT TERMINAL --- */
 
@@ -109,6 +110,10 @@ body {
 
 .terminal-window .statement:first-child {
   padding-top: 30px;
+}
+
+.terminal-window a {
+  color: #35feff;
 }
 
 .statement {
