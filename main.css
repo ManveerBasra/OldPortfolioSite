@@ -124,7 +124,7 @@ body {
  .input-statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   color: #f7f7f7;
   margin: 5px 0;
@@ -135,7 +135,7 @@ body {
  .output-statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   color: #e7d184;
   margin: 5px 0;
