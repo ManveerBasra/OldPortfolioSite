@@ -124,7 +124,7 @@ body {
  .input-statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #f7f7f7;
   margin: 5px 0;
@@ -135,7 +135,7 @@ body {
  .output-statement {
   display: block;
   font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #e7d184;
   margin: 5px 0;
@@ -188,10 +188,17 @@ body {
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
+  display: flex;
+}
+
+.card-img {
+  max-height: 375px;
+  max-width: 175px;
+  overflow: hidden;
 }
 
 .card-text {
-  display: block;
+  flex: 1;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
@@ -251,8 +258,8 @@ body {
 }
 
 .card-text h1 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 1.75;
 }
 
@@ -270,14 +277,14 @@ body {
 
 .card-tags span {
   color: #444;
-  border: 1px solid #2979ff;
+  border: 2px solid #2979ff;
   border-radius: 8px;
   text-transform: uppercase;
   display: inline-block;
   padding: 7px 15px;
   margin-right: 10px;
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 
